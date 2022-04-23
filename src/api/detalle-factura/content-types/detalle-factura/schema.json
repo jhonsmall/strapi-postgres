@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalle_facturas",
+  "info": {
+    "singularName": "detalle-factura",
+    "pluralName": "detalle-facturas",
+    "displayName": "DetalleFactura"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cantidad": {
+      "type": "integer"
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "Valor": {
+      "type": "decimal"
+    },
+    "factura": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::factura.factura",
+      "inversedBy": "detalle_facturas"
+    }
+  }
+}

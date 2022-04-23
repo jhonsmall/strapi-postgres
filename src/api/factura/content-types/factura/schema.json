@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facturas",
+  "info": {
+    "singularName": "factura",
+    "pluralName": "facturas",
+    "displayName": "Factura",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numero": {
+      "type": "string"
+    },
+    "Nombre": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "richtext"
+    },
+    "detalle_facturas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::detalle-factura.detalle-factura",
+      "mappedBy": "factura"
+    }
+  }
+}
