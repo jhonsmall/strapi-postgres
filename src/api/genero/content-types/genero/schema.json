@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "generos",
+  "info": {
+    "singularName": "genero",
+    "pluralName": "generos",
+    "displayName": "Genero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Genero": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Femenino"
+      ]
+    }
+  }
+}

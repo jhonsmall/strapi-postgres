@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_jhon_jhon_smalls",
+  "info": {
+    "displayName": "JhonSmall",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "string"
+    }
+  }
+}
