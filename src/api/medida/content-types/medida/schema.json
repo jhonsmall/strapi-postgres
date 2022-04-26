@@ -1,14 +1,14 @@
 {
   "kind": "collectionType",
-  "collectionName": "facturas",
+  "collectionName": "medidas",
   "info": {
-    "singularName": "factura",
-    "pluralName": "facturas",
-    "displayName": "Factura",
+    "singularName": "medida",
+    "pluralName": "medidas",
+    "displayName": "Medida",
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -18,17 +18,14 @@
     "Nombre": {
       "type": "string"
     },
-    "Direccion": {
+    "Comentario": {
       "type": "richtext"
     },
     "detalle_facturas": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::detalle-factura.detalle-factura",
-      "mappedBy": "factura"
-    },
-    "Pagada": {
-      "type": "boolean"
+      "mappedBy": "medida"
     }
   }
 }

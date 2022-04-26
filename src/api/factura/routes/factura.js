@@ -11,7 +11,7 @@ module.exports = createCoreRouter('api::factura.factura');
 module.exports = {
   routes: [
     {
-      method: "GET",
+      method: "POST",
       path: "/facturas/jhonsmall",
       handler: "jhonsmall.exampleAction",
     },

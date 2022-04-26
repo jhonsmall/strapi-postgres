@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::factura.factura",
       "inversedBy": "detalle_facturas"
+    },
+    "medida": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::medida.medida",
+      "inversedBy": "detalle_facturas"
     }
   }
 }
